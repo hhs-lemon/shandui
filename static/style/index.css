@@ -1,0 +1,129 @@
+
+page {
+	background: #FFF;
+}
+
+.indexBanner,
+.indexBanner image {
+	width: 750upx;
+	height: 220upx;
+	margin: 0 auto;
+	background-size:100%;
+}
+
+.uni-padding-wrap image {
+	max-width: 100%;
+	width: 100%;
+	height: 220upx;
+}
+uni-swiper {
+	height: 220upx !important;
+}
+
+
+
+.notice {
+	width: 100%;
+	height: 56upx;
+	border-bottom: 6upx solid #EEEEEE;
+}
+
+
+.notice image {
+	width: 34upx;
+	height: 32upx;
+	display: block;
+	margin-left: 30upx;
+	margin-right: 10upx;
+}
+
+
+.notice marquee {
+	font-size: 26upx !important;
+	color: #f27b8a;
+	display: block;
+	margin-right: 30upx;
+}
+
+
+
+.rankingGrabTit {
+    font-family: "Microsoft Yahei", "微软雅黑", "宋体" !important;
+	font-size: 32upx !important;
+	font-weight: bold;
+	color: #505050;
+	margin: 24upx 0 26upx 38upx;
+}
+
+
+
+.rankingGrab {
+	margin-left: 30upx;
+}
+
+.rankingGrab .box {
+	float: left;
+	width: 330upx;
+	height: 150upx;
+	margin: 0 8upx 14upx;
+	display: inline-block;
+	position: relative;
+}
+.rankingGrab .posit {
+	font-size: 28upx;
+	color: #FFFFFF;
+	position: absolute;
+	top: 36upx;
+	left: 42upx;
+	text-shadow:0 0 6upx rgba(255,255,255,0.3);
+}
+
+.rankingGrab .positPs {
+	font-size: 36upx;
+	color: #FFFFFF;
+	position: absolute;
+	top: 32upx;
+	left: 22upx;
+	text-shadow:0 0 6upx rgba(255,255,255,0.3);
+}
+.rankingGrab .positPs .ps {
+	font-size: 26upx;
+}
+
+
+
+.rankingGrab .earnings {
+	background:url("../../static/images/home/ps/earnings.png") 0 0 no-repeat;
+	background-size:100%;
+}
+.rankingGrab .acceptOrders {
+	background:url("../../static/images/home/ps/acceptOrders.png") 0 0 no-repeat;
+	background-size:100%;
+}
+.rankingGrab .recharge {
+	background:url("../../static/images/home/ps/recharge.png") 0 0 no-repeat;
+	background-size:100%;
+}
+.rankingGrab .grab {
+	background:url("../../static/images/home/ps/grab.png") 0 0 no-repeat;
+	background-size:100%;
+}
+
+
+.rankingGrab .introduction {
+	background:url("../../static/images/home/ps/introduction.png") 0 0 no-repeat;
+	background-size:100%;
+}
+.rankingGrab .strategy {
+	background:url("../../static/images/home/ps/strategy.png") 0 0 no-repeat;
+	background-size:100%;
+}
+.rankingGrab .mineField {
+	background:url("../../static/images/home/ps/mineField.png") 0 0 no-repeat;
+	background-size:100%;
+}
+
+.rankingGrab .redPacket {
+	background:url("../../static/images/home/ps/redPacket.png") 0 0 no-repeat;
+	background-size:100%;
+}

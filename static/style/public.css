@@ -1,0 +1,167 @@
+.mask {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 80;
+	background: rgba(0,0,0,0.6);
+}
+
+.boxAlign-center {
+	-moz-box-align: center;
+	-o-box-align: center;
+	-webkit-box-align: center;
+	box-align: center;
+}
+.disBox {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -o-box;
+	display: box;
+}
+.boxFlex {
+	-moz-box-flex: 1;
+	-o-box-flex: 1;
+	-webkit-box-flex: 1;
+	box-flex: 1;
+}
+.owt {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.arrowB {
+	width: 39upx;
+	height: 28upx;
+	background:url("../../static/images/deposit/arrowB.png") 0 0 no-repeat;
+	background-size:100%;
+}
+.arrowRight {
+/* 	display: block;
+	width: 28upx;
+	height: 28upx;
+	border: 28upx; solid #DBDBDB;
+	border-left: none;
+	border-bottom: none;
+	transform: rotate(45deg);
+	margin-right: 28upx; */
+}
+
+.ban {
+	width: 750upx;
+	height: 253upx;
+	margin: -1upx auto;
+	background:url("../../static/images/public/ban.png") 0 0 no-repeat;
+	background-size:100%;
+}
+
+/* Public styles
+---------------------------------------- */
+
+.bg {
+	background: #f8f4f5;
+}
+.pdB26 {
+	padding-bottom: 12upx;
+}
+.fwB {
+	font-weight: bold;
+}
+.w50 {
+	width: 50%;
+}
+.tac {
+	text-align: center;
+}
+.clOR {
+	color: #fff600;
+}
+.clF {
+	color: #FFFFFF;
+}
+.clB {
+	color: #1d93eb;
+}
+.clR {
+	color: #ff3188;
+}
+.cl0 {
+	color: #595757;
+}
+.cl8 {
+	color: #888888;
+}
+.pdLR {
+	padding-left: 28upx;
+	padding-right: 28upx;
+}
+/*---------------------*/
+
+.mgT18 {
+	margin-top: 18upx;
+}
+.mgT28 {
+	margin-top: 28upx;
+}
+
+.mgT {
+	margin-top: 28upx;
+}
+.mgB {
+	margin-bottom: 28upx;
+}
+
+.mgB26 {
+	margin-bottom: 26upx;
+}
+	
+.mgL6 {
+	margin-left: 6upx;
+}
+
+
+.mgL24 {
+	margin-left: 24upx;
+}
+.mgL28 {
+	margin-left: 28upx;
+}
+.mgR28 {
+	margin-right: 28upx;
+}
+
+.mgR22 {
+	margin-right: 22upx;
+}
+
+/*-------------------*/
+.fs26 {
+	font-size: 26upx;
+	margin-top: 0.6rem;
+}
+.fs34 {
+	font-size: 34upx;
+}
+
+.fs30 {
+	font-size: 30upx;
+}
+.fs32 {
+	font-size: 32upx;
+}
+.fs36 {
+	font-size: 36upx;
+}
+
+.fs40 {
+	font-size: 40upx;
+}
+.fs46 {
+	font-size: 46upx;
+}
+
+.fs60 {
+	font-size: 60upx;
+}
+

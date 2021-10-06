@@ -1,0 +1,119 @@
+.head {
+	width: 56upx;
+	height: 56upx;
+	margin-left: 26upx;
+	margin-right: 52upx;;
+}
+.head image {
+	width: 56upx;
+	height: 56upx;
+	border-radius: 50%;
+}
+.icon_top {
+	width: 56upx;
+	height: 56upx;
+	margin-left: 32upx;
+	cursor: pointer;
+	display: block;
+}
+.icon_top image {
+	width: 56upx;
+	height: 56upx;
+}
+
+.mgR18 {
+	margin-right: 18upx;
+}
+.pdT18 {
+	padding-top: 18upx;
+	width: 98%;
+}
+.hr {
+	width: 4upx;
+	height:  36upx;
+}
+/* .w33 {
+	width: 33.333%;
+} */
+
+.field-tr {
+	
+	height: 102upx;
+}
+.field-tr:last-child {
+	border: none;
+}
+
+.header {
+	width: 100%;
+	height: 6.0rem;
+	/* height: 226px; */
+	margin: -2px auto;
+	background:url("../../static/images/personage/newpers/banner.png") 0 0 no-repeat;
+	background-size:100%;
+}
+
+.header marquee {
+	height: 40upx;
+	font-size: 14px !important;
+	color: #fff;
+}
+
+.arrow{
+	border:2px solid #a235cc; display:inline-block; width:.6rem; height:.6rem; border-left:none; border-top:none; 
+	-webkit-transform:rotate(45deg); transform:rotate(135deg);
+}
+
+.orders {
+	width: 18rem;
+	padding-bottom: 30upx;
+	margin: 40px auto 0;
+	background: #FFFFFF;
+	border-radius: 15upx;
+	box-shadow:0 0 20upx rgba(246,61,61,0.3);
+}
+
+.box .icon {
+	padding-top: 24upx;
+	/* width: 68upx; */
+	height: 68upx;
+	margin-bottom: 6upx;
+}
+.box .icon image {
+	width: 35px;
+	height: 35px;
+	margin: 0 auto;
+}
+
+.list  {
+	width: 680upx;
+	margin: 10px auto;
+	background: url('../../static/img/about/zx.png') no-repeat;
+	/* background: #FFFFFF;
+	border-radius: 15upx; */
+	/* box-shadow:0 0 20upx rgba(246,61,61,0.3); */
+}
+
+
+.list .icon,
+.list .icon image {
+	width: 90upx;
+	height: 90upx;
+}
+.to {
+	width: 27upx;
+	height: 45upx;
+}
+
+.field-tr .text {
+	font-size: 30upx;
+	margin-left: 14upx;
+}
+
+
+
+
+
+
+
+
