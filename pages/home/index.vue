@@ -27,8 +27,9 @@
 			</view>
 			<view class="products-title">我要兑换</view>
 			<view class="product-list">
-				<view class="item-data" v-for="(item,i) in goodsList" style="background-size:contain"
-					:style="{'background': `rgba(0,0,0,0.1) url(data:image/png;base64,${item.goodsImg}) no-repeat center center`}">
+				<view class="item-data" v-for="(item,i) in goodsList"
+					:style="{'background': `rgba(0,0,0,0.1) url(data:image/png;base64,${item.goodsImg}) no-repeat center center`}"
+					style="background-size:100% 100%">
 					<view class="card-type">{{item.goodsTypeName}}{{item.quantity}}张</view>
 					<view class=" price"> 价格：{{item.unitPrice}} 元/张
 					</view>
@@ -49,7 +50,7 @@
 						<view class="amount">{{item.yjhszqje}}元</view>
 					</view>
 					<view class="item">
-						<u-button class="duihuan-btn" type="primary" @click="buyHandler(item.goodsId)">立即兑换</u-button>
+						<u-button class="duihuan-btn" type="primary" :disabled="!item.isMayBuy" @click="buyHandler(item.goodsId)">立即兑换</u-button>
 						<!-- <u-button class="pass-word-btn" @click="">卡密提取</u-button> -->
 					</view>
 
@@ -167,9 +168,9 @@
 				if (this.token) {
 					this.getTutorials()
 					this.getKeFuUrl()
-					this.getGoods()
 					this.getUserInfo()
 				}
+				this.getGoods()
 				this.getNews()
 			},
 			getUserInfo() {
