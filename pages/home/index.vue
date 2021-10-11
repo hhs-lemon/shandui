@@ -79,7 +79,7 @@
 			</view>
 			<img class="help2-img" src="/static/images/ixImg2.png" alt="">
 		</view>
-		<view class="to-usdt">
+		<!-- <view class="to-usdt">
 			<view>USDT步骤</view>
 			<view class="items">
 				<view class="item">
@@ -99,7 +99,7 @@
 					<view class="title">在资产里提币</view>
 				</view>
 			</view>
-		</view>
+		</view> -->
 		<view class="kefu">
 			客服
 			<span class="kefu-link" @click="doService">{{keFuUrl}}</span>
