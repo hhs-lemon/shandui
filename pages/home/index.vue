@@ -272,6 +272,9 @@
 										if (this.cardList.length > 0) {
 											this.show = true
 										}
+									} else if (res.code === 904) {
+										this.$queue.showToast(res.message);
+										this.gotoLogin()
 									} else {
 										this.$queue.showToast(res.message);
 									}
