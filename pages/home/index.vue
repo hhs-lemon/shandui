@@ -29,10 +29,10 @@
 			<view class="product-list">
 				<view class="item-data" v-for="(item,i) in goodsList"
 					:style="{'background': `100% / 100% 100% no-repeat  url(data:image/png;base64,${item.goodsImg})`}">
-					<view class="card-type">{{item.goodsTypeName}}{{item.quantity}}张</view>
-					<view class=" price"> 价格：{{item.unitPrice}} 元/张
-					</view>
-					<view class="item" style="margin-top: 10rpx;">
+					<view class="card-type">{{item.goodsTypeName}}&nbsp;&nbsp;&nbsp;{{item.quantity}}张</view>
+					<!-- <view class=" price"> 价格：{{item.unitPrice}} 元/张
+					</view> -->
+					<!-- <view class="item" style="margin-top: 10rpx;">
 						<view class="title">合计总面值</view>
 						<view class="amount">{{item.totalFaceValue}}元</view>
 					</view>
@@ -47,13 +47,11 @@
 					<view class="item">
 						<view class="title">预计赚得</view>
 						<view class="amount">{{item.yjhszqje}}元</view>
-					</view>
+					</view>-->
 					<view class="item">
 						<u-button class="duihuan-btn" type="primary" :disabled="!item.isMayBuy"
 							@click="buyHandler(item.goodsId)">立即兑换</u-button>
-						<!-- <u-button class="pass-word-btn" @click="">卡密提取</u-button> -->
 					</view>
-
 				</view>
 			</view>
 		</view>
@@ -138,6 +136,18 @@
 			this.init();
 		},
 		onReachBottom() {},
+		onPullDownRefresh() {
+			if (this.token) {
+				this.getKeFuUrl()
+				this.getUserInfo()
+			}
+			// this.getTutorials()
+			this.getGoods()
+			this.getNews()
+			setTimeout(function() {
+				uni.stopPullDownRefresh();
+			}, 1000);
+		},
 		components: {},
 		watch: {
 			'$route.path': function(to, from) {
@@ -166,10 +176,10 @@
 					text: this.$t('mine')
 				})
 				if (this.token) {
-					this.getTutorials()
 					this.getKeFuUrl()
 					this.getUserInfo()
 				}
+				this.getTutorials()
 				this.getGoods()
 				this.getNews()
 			},
@@ -334,8 +344,8 @@
 			getTutorials() {
 				this.$Request
 					.post('/config/getTutorialConfigList', {
-						mobile: this.user.mobile,
-						token: this.token
+						// mobile: this.user.mobile,
+						// token: this.token
 					}, "application/json")
 					.then(res => {
 						// console.log("教程", res);
@@ -479,18 +489,21 @@
 						color: #fff;
 						top: -50rpx;
 						padding: 10rpx 12rpx;
-						box-shadow: 0 4rpx 10rpx 0 #ddd;
+						box-shadow: 0 0rpx 10rpx 0 #ddd;
+						border-radius: 10rpx;
 					}
 				}
 
 				.item {
 					display: flex;
 					justify-content: space-between;
+					position: absolute;
+					bottom: 64rpx;
+					left: 250rpx;
 
 					.duihuan-btn {
-						margin-top: 30rpx;
 						width: 200rpx;
-						height: 70rpx;
+						height: 54rpx;
 					}
 
 					.pass-word-btn {
