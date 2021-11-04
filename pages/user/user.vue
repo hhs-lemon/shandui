@@ -111,6 +111,7 @@
 			return {
 				maskTitle: this.$t('Whether_to_log_out'),
 				token: '',
+				keFuUrl: '',
 				user: {},
 				headPicUrl: '/static/images/user/avatar.jpg',
 				servicePicUrl: '/static/images/user/kefu.png',
@@ -277,6 +278,25 @@
 			// 		confirmText: this.$t('determine')
 			// 	})
 			// },
+			getKeFuUrl() {
+				this.$Request
+					.post('/config/getServiceUrl', {
+						mobile: this.user.mobile,
+						token: this.token
+					}, "application/json")
+					.then(res => {
+						// console.log("客服", res);
+						if (res.code == 200) {
+							this.keFuUrl = res.data
+						} else {
+							this.$queue.showToast(res.message);
+						}
+						// uni.hideLoading();
+					})
+					.catch(res => {
+						// uni.hideLoading();
+					});
+			},
 			openURL(url) {
 				// #ifdef H5
 				if (uni.getSystemInfoSync().platform === 'ios') {
@@ -288,14 +308,13 @@
 				// #endif
 			},
 			doService() {
-				// // #ifdef H5
-				// if (uni.getSystemInfoSync().platform === 'ios') {
-				// 	window.open('https://direct.lc.chat/12769596/')
-				// } else {
-				// 	window.location.href = 'https://direct.lc.chat/12769596/'
-				// }
-				// // #endif
-				this.$queue.showToast('客服');
+				// #ifdef H5
+				if (uni.getSystemInfoSync().platform === 'ios') {
+					window.open(this.keFuUrl)
+				} else {
+					window.location.href = this.keFuUrl + '?v=' + (new Date().getTime());
+				}
+				// #endif
 			},
 			confirm() { //确定按钮
 				this.logout();
@@ -351,6 +370,7 @@
 			},
 			init() {
 				var token = this.$queue.getData('token');
+				this.token = token
 				//没有token就去登录页面
 				if (!token) {
 					uni.reLaunch({
@@ -359,6 +379,7 @@
 					return
 				}
 				this.getUserInfo();
+				this.getKeFuUrl()
 			},
 			getUserInfo() {
 				let token = uni.getStorageSync("token");

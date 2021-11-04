@@ -24,6 +24,10 @@
 			<view class="home-title">
 				<view class="h1">充值卡自助承兑平台</view>
 				<view class="title-tip">在线兑换充值卡，上闲鱼回收轻松赚差价！</view>
+				<view class="kefu-icon" @click="doService">
+					<span>{{$t('Customer_Service')}}</span>
+					<image class="service" mode="scaleToFill" :src="servicePicUrl"></image>
+				</view>
 			</view>
 			<view class="products-title">我要兑换</view>
 			<view class="product-list">
@@ -122,9 +126,11 @@
 				notice: '',
 				token: '',
 				user: {},
+				servicePicUrl: '/static/images/user/icon-kefu.png',
 				itemList: [],
 				itemStyle: {
-					"font-size": "40rpx"
+					"font-size": "40rpx",
+					"width": "690rpx"
 				},
 				keFuUrl: '',
 				goodsList: [],
@@ -449,6 +455,10 @@
 		}
 
 		.product {
+			.home-title {
+				position: relative;
+			}
+
 			.h1 {
 				text-align: center;
 				font-size: 64rpx;
@@ -614,5 +624,20 @@
 				line-height: 60rpx;
 			}
 		}
+	}
+
+	.service {
+		width: 50rpx;
+		height: 50rpx;
+		margin-left: 20rpx;
+	}
+
+	.kefu-icon {
+		position: absolute;
+		right: 60rpx;
+		bottom: -100rpx;
+		display: flex;
+		align-items: center;
+		margin: auto;
 	}
 </style>

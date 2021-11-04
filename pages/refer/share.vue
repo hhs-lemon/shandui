@@ -32,7 +32,7 @@
 			return {
 				qr_url: '/static/images/home/WechatIMG22.png',
 				activeCode: '',
-				invitation_url: 'http://8.129.134.121/#/pages/login/register?code='
+				invitation_url: 'http://8.210.14.148/#/pages/login/register?code='
 			};
 		},
 		components: {
@@ -102,7 +102,7 @@
 				var code = this.$queue.getData('user').inviteCode;
 				var inviteUrl = this.$queue.getData('user').inviteUrl;
 				this.activeCode = code;
-				this.invitation_url = 'http://8.129.134.121/#/pages/login/register?code=' + code;
+				this.invitation_url = 'http://8.210.14.148/#/pages/login/register?code=' + code;
 				this.$refs
 					.uqrcode
 					.make({
