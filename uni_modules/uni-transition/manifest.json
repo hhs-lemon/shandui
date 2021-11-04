@@ -116,7 +116,7 @@
 			//"disableHostCheck": true,
 			"proxy": {
 				"/api": {
-					"target": "http://8.129.134.121", //目标接口域名
+					"target": "http://8.210.14.148", //目标接口域名
 					"changeOrigin": true, //允许跨域
 					"secure": false // 设置支持https协议的代理
 				}
