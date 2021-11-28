@@ -24,84 +24,6 @@
 			}
 		},
 		{
-			"path": "pages/list/news_list",
-			"style": {
-				// "navigationBarTitleText": "新闻",
-				"navigationStyle": "custom"
-			}
-		},
-
-		{
-			"path": "pages/match/match_list",
-			"style": {
-				// "navigationBarTitleText": "赛事",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/list/order_list",
-			"style": {
-				// "navigationBarTitleText": "下注",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/order/order_detail",
-			"style": {
-				// "navigationBarTitleText": "下注详情",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/list/wallet_list",
-			"style": {
-				"navigationBarTitleText": "账变明细",
-				"navigationBarBackgroundColor": "#fff"
-				// "navigationStyle": "custom"
-
-			}
-		},
-		{
-			"path": "pages/user/bankcard_list",
-			"style": {
-				// "navigationBarTitleText": "银行卡列表",
-				"navigationBarBackgroundColor": "#eee",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/list/login_log",
-			"style": {
-				// "navigationBarTitleText": "登录历史"
-			}
-		},
-		{
-			"path": "pages/events/index",
-			"style": {
-				// "navigationBarTitleText": "活动大厅",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/list/notice_list",
-			"style": {
-				// "navigationBarTitleText": "消息中心",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/withdraw/index",
-			"style": {
-				// "navigationBarTitleText": "提现"
-			}
-		},
-		{
-			"path": "pages/list/withdraw_list",
-			"style": {
-				// "navigationBarTitleText": "提现记录"
-			}
-		},
-		{
 			"path": "pages/recharge/index",
 			"style": {
 				"navigationBarTitleText": "充值"
@@ -119,20 +41,6 @@
 			"path": "pages/login/login",
 			"style": {
 				// "navigationBarTitleText": "登录",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/match/match_order",
-			"style": {
-				// "navigationBarTitleText": "比赛下单",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/notice/notice_detail",
-			"style": {
-				// "navigationBarTitleText": "公告",
 				"navigationStyle": "custom"
 			}
 		},
@@ -155,12 +63,6 @@
 			}
 		},
 		{
-			"path": "pages/user/user_level",
-			"style": {
-				// "navigationBarTitleText": "会员等级"
-			}
-		},
-		{
 			"path": "pages/user/forget_pwd2",
 			"style": {
 				// "navigationBarTitleText": "修改安全密码"
@@ -170,19 +72,6 @@
 			"path": "pages/list/recharge_list",
 			"style": {
 				// "navigationBarTitleText": "充值记录"
-			}
-		},
-		{
-			"path": "pages/transaction/index",
-			"style": {
-				// "navigationBarTitleText": "交易"
-			}
-		},
-		{
-			"path": "pages/refer/home",
-			"style": {
-				// "navigationBarTitleText": "我的团队中心",
-				"navigationStyle": "custom"
 			}
 		},
 		{
@@ -205,73 +94,7 @@
 				"navigationBarBackgroundColor": "#fff"
 			}
 		},
-		{
-			"path": "pages/refer/proxy",
-			"style": {
-				// "navigationBarTitleText": "代理规则",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/match/match_content",
-			"style": {
-				// "navigationBarTitleText": "赛事详情",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/events/index",
-			"style": {
-				// "navigationBarTitleText": "活动大厅",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/match/match_history",
-			"style": {
-				// "navigationBarTitleText": "赛事结果查询",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/user/bankcard_add",
-			"style": {
-				// "navigationBarTitleText": "添加银行卡"
-			}
-		},
-		{
-			"path": "pages/user/fab",
-			"style": {
-				// "navigationBarTitleText": "fab"
-			}
-		},
-		{
-			"path": "pages/user/keyboard",
-			"style": {
-				// "navigationBarTitleText": "keyboard"
-			}
-		},
-		{
-			"path": "pages/news/index",
-			"style": {
-				// "navigationBarTitleText": "赛事详情",
-				"navigationStyle": "custom"
-			}
-		}, {
-			"path": "pages/user/help/help",
-			"style": {
-				"navigationStyle": "custom"
-			}
-
-		}, {
-			"path": "pages/user/help/help_detail/help_detail",
-			"style": {
-				// "navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-			}
-
-		}, {
+		 {
 			"path": "pages/list/orders",
 			"style": {
 				"navigationBarTitleText": "兑换订单"
