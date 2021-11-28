@@ -83,13 +83,6 @@
 			}
 		},
 		{
-			"path": "pages/events/event_detail",
-			"style": {
-				// "navigationBarTitleText": "活动详情",
-				"navigationStyle": "custom"
-			}
-		},
-		{
 			"path": "pages/list/notice_list",
 			"style": {
 				// "navigationBarTitleText": "消息中心",
@@ -230,13 +223,6 @@
 			"path": "pages/events/index",
 			"style": {
 				// "navigationBarTitleText": "活动大厅",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/events/event_detail",
-			"style": {
-				// "navigationBarTitleText": "活动详情",
 				"navigationStyle": "custom"
 			}
 		},

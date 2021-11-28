@@ -1,7 +1,5 @@
 <template>
 	<view>
-		<uni-nav-bar color="#FEFEFE" backgroundColor="transparent" left-icon="back" right-icon="reload"
-			:title="this.$t('Event_Details')" @clickRight="refresh()" @clickLeft="goBack()"></uni-nav-bar>
 		<view class='topArea'>
 			<view class="details-date">
 				<view>{{$t('Start_time')}}
@@ -109,7 +107,6 @@
 		},
 		onLoad(option) {
 			uni.setNavigationBarTitle({
-				title: this.$t('Event_Details')
 			})
 			this.matchId = option.id;
 			this.init();

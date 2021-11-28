@@ -84,7 +84,6 @@
     },
 	onLoad() {
 		uni.setNavigationBarTitle({
-			title:this.$t('Event_Details')
 		})
 	},
     onReady() {
