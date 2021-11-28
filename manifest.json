@@ -126,17 +126,13 @@
                 }
             },
             "https" : false,
-            "port" : 8081
+            "port" : 80
         },
         // "pathRewrite":{
         //   "^/dyh":"" //替换为空 自己填写的
         // }
         "sdkConfigs" : {
-            "maps" : {
-                "qqmap" : {
-                    "key" : ""
-                }
-            }
+            "maps" : {}
         },
         "async" : {
             "timeout" : 20000

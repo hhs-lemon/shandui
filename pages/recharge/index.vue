@@ -236,7 +236,7 @@
 			payTab(val) {
 				this.initData()
 				this.pay_tab = val;
-				this.reqRechargeList()
+				// this.reqRechargeList()
 				// this.content = JSON.parse(this.data[this.pay_tab].content);
 				// this.type = this.data[this.pay_tab].type;
 				// this.recharge = '';
@@ -370,6 +370,10 @@
 				}
 			},
 			rechargeSubmit() {
+				if (!this.types[this.pay_tab].payType) {
+					this.$queue.showToast('请刷新');
+					return
+				}
 				// 请求后端拿到支付金额数值
 				this.$Request
 					.post('/business/pay', {

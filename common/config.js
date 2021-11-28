@@ -8,7 +8,7 @@
  */
 //const ROOTPATH = "http://localhost:8213/sports";
 // const ROOTPATH = "http://8.210.14.148/api";
-const ROOTPATH = "https://8.210.14.148:8080/api";
+const ROOTPATH = "//www.feiaihao.com/api";
 //const ROOTPATH = "http://api.wepay8.me/sports";
 module.exports = {
 	APIHOST: ROOTPATH,
